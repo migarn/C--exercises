@@ -1,0 +1,13 @@
+E:\CSharp\Arrays\Arrays\bin\Debug\netcoreapp3.1\Arrays.exe
+E:\CSharp\Arrays\Arrays\bin\Debug\netcoreapp3.1\Arrays.deps.json
+E:\CSharp\Arrays\Arrays\bin\Debug\netcoreapp3.1\Arrays.runtimeconfig.json
+E:\CSharp\Arrays\Arrays\bin\Debug\netcoreapp3.1\Arrays.runtimeconfig.dev.json
+E:\CSharp\Arrays\Arrays\bin\Debug\netcoreapp3.1\Arrays.dll
+E:\CSharp\Arrays\Arrays\bin\Debug\netcoreapp3.1\Arrays.pdb
+E:\CSharp\Arrays\Arrays\obj\Debug\netcoreapp3.1\Arrays.csprojAssemblyReference.cache
+E:\CSharp\Arrays\Arrays\obj\Debug\netcoreapp3.1\Arrays.csproj.CoreCompileInputs.cache
+E:\CSharp\Arrays\Arrays\obj\Debug\netcoreapp3.1\Arrays.AssemblyInfoInputs.cache
+E:\CSharp\Arrays\Arrays\obj\Debug\netcoreapp3.1\Arrays.AssemblyInfo.cs
+E:\CSharp\Arrays\Arrays\obj\Debug\netcoreapp3.1\Arrays.dll
+E:\CSharp\Arrays\Arrays\obj\Debug\netcoreapp3.1\Arrays.pdb
+E:\CSharp\Arrays\Arrays\obj\Debug\netcoreapp3.1\Arrays.genruntimeconfig.cache
