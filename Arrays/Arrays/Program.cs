@@ -21,7 +21,8 @@ namespace Arrays
                 Console.WriteLine("Tablica z nieposortowanymi wartościami:");
                 printArray(array);
                 Console.WriteLine("Tablica z posortowanymi wartościami:");
-                printArray(bubbleSort(array));
+                bubbleSort(ref array);
+                printArray(array);
             }
             catch (Exception e)
             {
@@ -49,7 +50,7 @@ namespace Arrays
             Console.WriteLine();
         }
 
-        private static int[] bubbleSort(int[] array)
+        private static void bubbleSort(ref int[] array)
         {
             Boolean isSorting = true;
             while (isSorting)
@@ -66,7 +67,6 @@ namespace Arrays
                     }            
                 }
             }
-            return array;
         }
     }
 }
