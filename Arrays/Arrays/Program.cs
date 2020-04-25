@@ -18,7 +18,10 @@ namespace Arrays
                 Console.WriteLine("Podaj maksymalną wartość podaną w komórkach tablicy:");
                 int maxValue = int.Parse(Console.ReadLine());
                 int[] array = generateIntsArray(arraySize, maxValue);
+                Console.WriteLine("Tablica z nieposortowanymi wartościami:");
                 printArray(array);
+                Console.WriteLine("Tablica z posortowanymi wartościami:");
+                printArray(bubbleSort(array));
             }
             catch (Exception e)
             {
@@ -43,6 +46,27 @@ namespace Arrays
             {
                 Console.Write(number + " ");
             }
+            Console.WriteLine();
+        }
+
+        private static int[] bubbleSort(int[] array)
+        {
+            Boolean isSorting = true;
+            while (isSorting)
+            {
+                isSorting = false;
+                for (int i = 0; i < array.Length - 1; i++)
+                {
+                    if (array[i] > array[i + 1])
+                    {
+                        int auxiliaryVariable = array[i];
+                        array[i] = array[i + 1];
+                        array[i + 1] = auxiliaryVariable;
+                        isSorting = true;
+                    }            
+                }
+            }
+            return array;
         }
     }
 }
