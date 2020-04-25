@@ -8,7 +8,8 @@ namespace MichalGarnczarskiHelloWorld
         {
             Console.WriteLine("Wpisz coś...");
             string userValue = Console.ReadLine();
-            Console.WriteLine("Wartość wpisana przez użytkownika to: \"" + userValue + "\"");
+            string helloMessage = "Cała naprzód!";
+            Console.WriteLine("Wartość stringa wpisana na stałe to: \"{0}\", a wartość wprowadzona przez użytkownika to: \"{1}\".", helloMessage, userValue);
             Console.ReadKey();
         }
     }
