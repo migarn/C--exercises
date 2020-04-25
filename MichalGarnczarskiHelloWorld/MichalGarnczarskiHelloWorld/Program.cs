@@ -6,6 +6,11 @@ namespace MichalGarnczarskiHelloWorld
     {
         static void Main(string[] args)
         {
+            operateOnTwoDoubles();
+        }
+
+        private static void operateOnTwoDoubles()
+        {
             try
             {
                 Console.WriteLine("Wpisz pierwszą liczbę:");
@@ -30,14 +35,14 @@ namespace MichalGarnczarskiHelloWorld
                         Console.WriteLine("Iloraz podanych liczb jest równa: " + (firstNumber / secondNumber));
                         break;
                     default:
-                        throw new Exception();               
+                        throw new Exception();
                 }
             }
             catch (Exception e)
             {
                 Console.WriteLine("Coś poszło nie tak...");
             }
-            Console.ReadKey();            
+            Console.ReadKey();
         }
     }
 }
