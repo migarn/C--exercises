@@ -6,7 +6,18 @@ namespace MichalGarnczarskiHelloWorld
     {
         static void Main(string[] args)
         {
-            operateOnTwoDoubles();
+            Boolean inLoop = true;
+            while (inLoop) {
+                operateOnTwoDoubles();
+                Console.WriteLine("Jeśli chcesz przerwać wpisz \"n\", jeśli chcesz kontynuować wpisz dowolny inny ciąg znaków.");
+                string insertedString = Console.ReadLine();
+                if (insertedString.Equals("n"))
+                {
+                    inLoop = false;
+                    Console.WriteLine("Program przerwany.");
+                }
+            }
+            Console.ReadKey();
         }
 
         private static void operateOnTwoDoubles()
@@ -42,7 +53,6 @@ namespace MichalGarnczarskiHelloWorld
             {
                 Console.WriteLine("Coś poszło nie tak...");
             }
-            Console.ReadKey();
         }
     }
 }
