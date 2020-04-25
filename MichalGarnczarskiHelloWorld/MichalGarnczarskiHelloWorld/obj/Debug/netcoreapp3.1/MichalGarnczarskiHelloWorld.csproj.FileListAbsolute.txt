@@ -1,0 +1,13 @@
+E:\CSharp\MichalGarnczarskiHelloWorld\MichalGarnczarskiHelloWorld\bin\Debug\netcoreapp3.1\MichalGarnczarskiHelloWorld.exe
+E:\CSharp\MichalGarnczarskiHelloWorld\MichalGarnczarskiHelloWorld\bin\Debug\netcoreapp3.1\MichalGarnczarskiHelloWorld.deps.json
+E:\CSharp\MichalGarnczarskiHelloWorld\MichalGarnczarskiHelloWorld\bin\Debug\netcoreapp3.1\MichalGarnczarskiHelloWorld.runtimeconfig.json
+E:\CSharp\MichalGarnczarskiHelloWorld\MichalGarnczarskiHelloWorld\bin\Debug\netcoreapp3.1\MichalGarnczarskiHelloWorld.runtimeconfig.dev.json
+E:\CSharp\MichalGarnczarskiHelloWorld\MichalGarnczarskiHelloWorld\bin\Debug\netcoreapp3.1\MichalGarnczarskiHelloWorld.dll
+E:\CSharp\MichalGarnczarskiHelloWorld\MichalGarnczarskiHelloWorld\bin\Debug\netcoreapp3.1\MichalGarnczarskiHelloWorld.pdb
+E:\CSharp\MichalGarnczarskiHelloWorld\MichalGarnczarskiHelloWorld\obj\Debug\netcoreapp3.1\MichalGarnczarskiHelloWorld.csprojAssemblyReference.cache
+E:\CSharp\MichalGarnczarskiHelloWorld\MichalGarnczarskiHelloWorld\obj\Debug\netcoreapp3.1\MichalGarnczarskiHelloWorld.csproj.CoreCompileInputs.cache
+E:\CSharp\MichalGarnczarskiHelloWorld\MichalGarnczarskiHelloWorld\obj\Debug\netcoreapp3.1\MichalGarnczarskiHelloWorld.AssemblyInfoInputs.cache
+E:\CSharp\MichalGarnczarskiHelloWorld\MichalGarnczarskiHelloWorld\obj\Debug\netcoreapp3.1\MichalGarnczarskiHelloWorld.AssemblyInfo.cs
+E:\CSharp\MichalGarnczarskiHelloWorld\MichalGarnczarskiHelloWorld\obj\Debug\netcoreapp3.1\MichalGarnczarskiHelloWorld.dll
+E:\CSharp\MichalGarnczarskiHelloWorld\MichalGarnczarskiHelloWorld\obj\Debug\netcoreapp3.1\MichalGarnczarskiHelloWorld.pdb
+E:\CSharp\MichalGarnczarskiHelloWorld\MichalGarnczarskiHelloWorld\obj\Debug\netcoreapp3.1\MichalGarnczarskiHelloWorld.genruntimeconfig.cache

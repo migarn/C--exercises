@@ -6,7 +6,9 @@ namespace MichalGarnczarskiHelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string helloMessage = "Cała naprzód";
+            Console.WriteLine(helloMessage);
+            Console.ReadKey();
         }
     }
 }
