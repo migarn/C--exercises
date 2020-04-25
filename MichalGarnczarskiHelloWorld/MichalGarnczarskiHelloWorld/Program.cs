@@ -9,7 +9,7 @@ namespace MichalGarnczarskiHelloWorld
             Console.WriteLine("Wpisz coś...");
             string userValue = Console.ReadLine();
             string helloMessage = "Cała naprzód!";
-            Console.WriteLine("Wartość stringa wpisana na stałe to: \"{0}\", a wartość wprowadzona przez użytkownika to: \"{1}\".", helloMessage, userValue);
+            Console.WriteLine($"Wartość stringa wpisana na stałe to: \"{helloMessage}\", a wartość wprowadzona przez użytkownika to: \"{userValue}\".");
             Console.ReadKey();
         }
     }
