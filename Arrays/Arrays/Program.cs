@@ -68,5 +68,24 @@ namespace Arrays
                 }
             }
         }
+
+        private static void bubbleSort2(int[] array)
+        {
+            Boolean isSorting = true;
+            while (isSorting)
+            {
+                isSorting = false;
+                for (int i = 0; i < array.Length - 1; i++)
+                {
+                    if (array[i] > array[i + 1])
+                    {
+                        int auxiliaryVariable = array[i];
+                        array[i] = array[i + 1];
+                        array[i + 1] = auxiliaryVariable;
+                        isSorting = true;
+                    }
+                }
+            }
+        }
     }
 }

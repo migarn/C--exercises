@@ -1,0 +1,13 @@
+E:\CSharp\ArrayLists\ArrayLists\bin\Debug\netcoreapp3.1\ArrayLists.exe
+E:\CSharp\ArrayLists\ArrayLists\bin\Debug\netcoreapp3.1\ArrayLists.deps.json
+E:\CSharp\ArrayLists\ArrayLists\bin\Debug\netcoreapp3.1\ArrayLists.runtimeconfig.json
+E:\CSharp\ArrayLists\ArrayLists\bin\Debug\netcoreapp3.1\ArrayLists.runtimeconfig.dev.json
+E:\CSharp\ArrayLists\ArrayLists\bin\Debug\netcoreapp3.1\ArrayLists.dll
+E:\CSharp\ArrayLists\ArrayLists\bin\Debug\netcoreapp3.1\ArrayLists.pdb
+E:\CSharp\ArrayLists\ArrayLists\obj\Debug\netcoreapp3.1\ArrayLists.csprojAssemblyReference.cache
+E:\CSharp\ArrayLists\ArrayLists\obj\Debug\netcoreapp3.1\ArrayLists.csproj.CoreCompileInputs.cache
+E:\CSharp\ArrayLists\ArrayLists\obj\Debug\netcoreapp3.1\ArrayLists.AssemblyInfoInputs.cache
+E:\CSharp\ArrayLists\ArrayLists\obj\Debug\netcoreapp3.1\ArrayLists.AssemblyInfo.cs
+E:\CSharp\ArrayLists\ArrayLists\obj\Debug\netcoreapp3.1\ArrayLists.dll
+E:\CSharp\ArrayLists\ArrayLists\obj\Debug\netcoreapp3.1\ArrayLists.pdb
+E:\CSharp\ArrayLists\ArrayLists\obj\Debug\netcoreapp3.1\ArrayLists.genruntimeconfig.cache
