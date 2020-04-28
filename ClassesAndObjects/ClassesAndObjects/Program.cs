@@ -6,9 +6,9 @@ namespace ClassesAndObjects
     {
         static void Main(string[] args)
         {
-            Animal dog = new Animal { Name = "Rex", Age = 5, Species = "pies" };
-            Console.WriteLine("To zwierzę to " + dog.Species + ", ma " + dog.Age + " lat i ma na imię " + dog.Name + ".");
-            dog.Move();
+            Animal cat = new Animal { Name = "Mruczek", Age = 5, Species = "kot" };
+            Console.WriteLine(cat.ToString());
+            cat.Move();
         }
     }
 
@@ -22,5 +22,28 @@ namespace ClassesAndObjects
         {
             Console.WriteLine(Name + " porusza się.");
         }
+
+        public new string ToString()
+        {
+            return "To zwierzę to " + Species + ", ma " + Age + " lat i ma na imię " + Name + ".";
+        }
     }
+
+    class Fish : Animal
+    {
+        public new void Move()
+        {
+            Console.WriteLine(Name + " pływa.");
+        }
+    }
+
+    class Dog : Animal
+    {
+        public new void Move()
+        {
+            Console.WriteLine(Name + " biega.");
+        }
+    }
+
+
 }
