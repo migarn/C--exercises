@@ -17,6 +17,10 @@ namespace ClassesAndObjects
             Dog dog = new Dog { Name = "Rex", Age = 8, Species = "pies" };
             Console.WriteLine(dog.ToString());
             dog.Move();
+
+            Animal anotherFish = new Fish { Name = "Rybeńka", Age = 7, Species = "węgorz" };
+            Console.WriteLine(anotherFish.ToString());
+            anotherFish.Move();
         }
     }
 
