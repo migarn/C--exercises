@@ -30,7 +30,7 @@ namespace ClassesAndObjects
         public int Age { get; set; }
         public string Species { get; set; }
 
-        public void Move()
+        public virtual void Move()
         {
             Console.WriteLine(Name + " porusza się.");
         }
@@ -43,7 +43,7 @@ namespace ClassesAndObjects
 
     class Fish : Animal
     {
-        public new void Move()
+        public override void Move()
         {
             Console.WriteLine(Name + " pływa.");
         }
@@ -51,7 +51,7 @@ namespace ClassesAndObjects
 
     class Dog : Animal
     {
-        public new void Move()
+        public override void Move()
         {
             Console.WriteLine(Name + " biega.");
         }
