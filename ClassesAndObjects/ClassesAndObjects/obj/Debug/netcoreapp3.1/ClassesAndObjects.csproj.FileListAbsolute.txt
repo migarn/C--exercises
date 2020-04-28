@@ -1,0 +1,12 @@
+E:\CSharp\ClassesAndObjects\ClassesAndObjects\bin\Debug\netcoreapp3.1\ClassesAndObjects.exe
+E:\CSharp\ClassesAndObjects\ClassesAndObjects\bin\Debug\netcoreapp3.1\ClassesAndObjects.deps.json
+E:\CSharp\ClassesAndObjects\ClassesAndObjects\bin\Debug\netcoreapp3.1\ClassesAndObjects.runtimeconfig.json
+E:\CSharp\ClassesAndObjects\ClassesAndObjects\bin\Debug\netcoreapp3.1\ClassesAndObjects.runtimeconfig.dev.json
+E:\CSharp\ClassesAndObjects\ClassesAndObjects\bin\Debug\netcoreapp3.1\ClassesAndObjects.dll
+E:\CSharp\ClassesAndObjects\ClassesAndObjects\bin\Debug\netcoreapp3.1\ClassesAndObjects.pdb
+E:\CSharp\ClassesAndObjects\ClassesAndObjects\obj\Debug\netcoreapp3.1\ClassesAndObjects.csproj.CoreCompileInputs.cache
+E:\CSharp\ClassesAndObjects\ClassesAndObjects\obj\Debug\netcoreapp3.1\ClassesAndObjects.AssemblyInfoInputs.cache
+E:\CSharp\ClassesAndObjects\ClassesAndObjects\obj\Debug\netcoreapp3.1\ClassesAndObjects.AssemblyInfo.cs
+E:\CSharp\ClassesAndObjects\ClassesAndObjects\obj\Debug\netcoreapp3.1\ClassesAndObjects.dll
+E:\CSharp\ClassesAndObjects\ClassesAndObjects\obj\Debug\netcoreapp3.1\ClassesAndObjects.pdb
+E:\CSharp\ClassesAndObjects\ClassesAndObjects\obj\Debug\netcoreapp3.1\ClassesAndObjects.genruntimeconfig.cache
