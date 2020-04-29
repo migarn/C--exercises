@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace Arrays
 {
@@ -18,11 +19,17 @@ namespace Arrays
                 Console.WriteLine("Podaj maksymalną wartość podaną w komórkach tablicy:");
                 int maxValue = int.Parse(Console.ReadLine());
                 int[] array = generateIntsArray(arraySize, maxValue);
+
                 Console.WriteLine("Tablica z nieposortowanymi wartościami:");
                 printArray(array);
+
                 Console.WriteLine("Tablica z posortowanymi wartościami:");
                 bubbleSort(array);
                 printArray(array);
+
+                Console.WriteLine("Tablica z posortowanymi wartościami:");
+                insertSort(array);
+                //printArray(array);
             }
             catch (Exception e)
             {
@@ -30,11 +37,11 @@ namespace Arrays
             }
         }
 
-        private static int[] generateIntsArray(int arraySize, int maxValue)
+        private static int[] generateIntsArray(int arrayLength, int maxValue)
         {
-            int[] array = new int[arraySize];
+            int[] array = new int[arrayLength];
             Random random = new Random();
-            for (int i = 0; i < arraySize; i++)
+            for (int i = 0; i < arrayLength; i++)
             {
                 array[i] = random.Next(maxValue);
             }
@@ -67,6 +74,36 @@ namespace Arrays
                     }
                 }
             }
+        }
+
+        private static void insertSort(int[] array)
+        {
+            ArrayList sortedArrayList = new ArrayList();
+            sortedArrayList.Add(array[0]);
+
+            for (int i = 1; i < array.Length; i++)
+            {
+                int currentElement = array[i];
+
+                foreach (int j in sortedArrayList)
+                {
+                    if (currentElement <= j)
+                    {
+                        sortedArrayList.Insert(sortedArrayList.IndexOf(j), currentElement);
+                        return;
+                    }
+                }
+            }
+
+            foreach (int i in sortedArrayList)
+            {
+                Console.WriteLine(i);
+            }
+
+            //for (int i = 1; i < array.Length; i++)
+            //{
+            //    array[i] = sortedArrayList.[i];
+            //}
         }
     }
 }
