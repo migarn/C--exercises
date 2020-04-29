@@ -84,14 +84,21 @@ namespace Arrays
             for (int i = 1; i < array.Length; i++)
             {
                 int currentElement = array[i];
+                Boolean inserted = false;
 
                 foreach (int j in sortedArrayList)
                 {
                     if (currentElement <= j)
                     {
                         sortedArrayList.Insert(sortedArrayList.IndexOf(j), currentElement);
+                        inserted = true;
                         return;
                     }
+                }
+
+                if (!inserted)
+                {
+                    sortedArrayList.Add(currentElement);
                 }
             }
 
