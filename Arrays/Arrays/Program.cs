@@ -20,16 +20,16 @@ namespace Arrays
                 int maxValue = int.Parse(Console.ReadLine());
                 int[] array = generateIntsArray(arraySize, maxValue);
 
-                Console.WriteLine("Tablica z nieposortowanymi wartościami:");
+                Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
                 printArray(array);
 
-                Console.WriteLine("Tablica z posortowanymi wartościami:");
+                Console.WriteLine("\nTablica z posortowanymi wartościami (sortowanie bąbelkowe):");
                 bubbleSort(array);
                 printArray(array);
 
-                Console.WriteLine("Tablica z posortowanymi wartościami:");
+                Console.WriteLine("\nTablica z posortowanymi wartościami (sortowanie przez wstawianie):");
                 insertSort(array);
-                //printArray(array);
+                printArray(array);
             }
             catch (Exception e)
             {
@@ -102,15 +102,10 @@ namespace Arrays
                 }
             }
 
-            foreach (int i in sortedArrayList)
+            for (int i = 0; i < array.Length; i++)
             {
-                Console.WriteLine(i);
+                array[i] = (int) sortedArrayList[i];
             }
-
-            //for (int i = 1; i < array.Length; i++)
-            //{
-            //    array[i] = sortedArrayList.[i];
-            //}
         }
     }
 }
