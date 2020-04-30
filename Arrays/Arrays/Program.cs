@@ -132,15 +132,15 @@ namespace Arrays
 
         }
 
-        private static int FindMinimum(int[] array)
+        private static int FindMinimumInRange(int[] array, int firstIndex)
         {
-            int minumum = array[0];
+            int minumum = array[firstIndex];
 
-            foreach(int i in array)
+            for (int i = firstIndex; i < array.Length; i++)
             {
-                if (i < minumum)
+                if (array[i] < minumum)
                 {
-                    minumum = i;
+                    minumum = array[i];
                 }
             }
 
