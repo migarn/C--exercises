@@ -7,10 +7,10 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
-            generateArray();
+            GenerateArray();
         }
 
-        private static void generateArray()
+        private static void GenerateArray()
         {
             try
             {
@@ -18,18 +18,18 @@ namespace Arrays
                 int arraySize = int.Parse(Console.ReadLine());
                 Console.WriteLine("Podaj maksymalną wartość podaną w komórkach tablicy:");
                 int maxValue = int.Parse(Console.ReadLine());
-                int[] array = generateIntsArray(arraySize, maxValue);
+                int[] array = GenerateIntsArray(arraySize, maxValue);
 
                 Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
-                printArray(array);
+                PrintArray(array);
 
                 Console.WriteLine("\nTablica z posortowanymi wartościami (sortowanie bąbelkowe):");
-                bubbleSort(array);
-                printArray(array);
+                BubbleSort(array);
+                PrintArray(array);
 
                 Console.WriteLine("\nTablica z posortowanymi wartościami (sortowanie przez wstawianie):");
-                insertSort(array);
-                printArray(array);
+                InsertSort(array);
+                PrintArray(array);
             }
             catch (Exception e)
             {
@@ -37,7 +37,7 @@ namespace Arrays
             }
         }
 
-        private static int[] generateIntsArray(int arrayLength, int maxValue)
+        private static int[] GenerateIntsArray(int arrayLength, int maxValue)
         {
             int[] array = new int[arrayLength];
             Random random = new Random();
@@ -48,7 +48,7 @@ namespace Arrays
             return array;
         }
 
-        private static void printArray(int[] array)
+        private static void PrintArray(int[] array)
         {
             foreach (int number in array)
             {
@@ -57,7 +57,7 @@ namespace Arrays
             Console.WriteLine();
         }
 
-        private static void bubbleSort(int[] array)
+        private static void BubbleSort(int[] array)
         {
             Boolean isSorting = true;
             while (isSorting)
@@ -76,7 +76,7 @@ namespace Arrays
             }
         }
 
-        private static void insertSort(int[] array)
+        private static void InsertSort(int[] array)
         {
             ArrayList sortedArrayList = new ArrayList();
             sortedArrayList.Add(array[0]);
