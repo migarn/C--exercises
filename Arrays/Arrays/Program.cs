@@ -109,7 +109,7 @@ namespace Arrays
 
             for (int i = 0; i < array.Length; i++)
             {
-                array[i] = (int) sortedArrayList[i];
+                array[i] = (int)sortedArrayList[i];
             }
             stopwatch.Stop();
             return stopwatch.Elapsed;
@@ -121,6 +121,14 @@ namespace Arrays
 
             for (int i = 0; i < array.Length - 1; i++)
             {
+                int minimum = FindMinimumInRange(array, i + 1);
+                if (minimum < i)
+                {
+                    int auxiliaryVariable = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = auxiliaryVariable;
+
+                }
 
             }
 
@@ -132,19 +140,25 @@ namespace Arrays
 
         }
 
-        private static int FindMinimumInRange(int[] array, int firstIndex)
+        private static int[] FindMinimumInRange(int[] array, int firstIndex)
         {
-            int minumum = array[firstIndex];
+            int[] result = new int[2];
+            int minimum = array[firstIndex];
+            int minimumIndex = firstIndex;
 
             for (int i = firstIndex; i < array.Length; i++)
             {
-                if (array[i] < minumum)
+                if (array[i] < minimum)
                 {
-                    minumum = array[i];
+                    minimum = array[i];
+                    minimumIndex = i;
                 }
             }
 
-            return minumum;
+            result[0] = minimum;
+            result[1] = minimumIndex;
+
+            return result;
         }
     }
 }
