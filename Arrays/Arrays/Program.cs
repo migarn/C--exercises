@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections;
+using System.Diagnostics;
 
 namespace Arrays
 {
     class Program
     {
+        static Stopwatch stopwatch = new Stopwatch();
+
         static void Main(string[] args)
         {
             GenerateArray();
@@ -23,12 +26,10 @@ namespace Arrays
                 Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
                 PrintArray(array);
 
-                Console.WriteLine("\nTablica z posortowanymi wartościami (sortowanie bąbelkowe):");
-                BubbleSort(array);
+                Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + BubbleSort(array) + "):");
                 PrintArray(array);
 
-                Console.WriteLine("\nTablica z posortowanymi wartościami (sortowanie przez wstawianie):");
-                InsertSort(array);
+                Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wstawianie (sortowanie zajęło " + InsertSort(array) + "):");
                 PrintArray(array);
             }
             catch (Exception e)
@@ -57,8 +58,9 @@ namespace Arrays
             Console.WriteLine();
         }
 
-        private static void BubbleSort(int[] array)
+        private static TimeSpan BubbleSort(int[] array)
         {
+            stopwatch.Start();
             Boolean isSorting = true;
             while (isSorting)
             {
@@ -74,10 +76,13 @@ namespace Arrays
                     }
                 }
             }
+            stopwatch.Stop();
+            return stopwatch.Elapsed;
         }
 
-        private static void InsertSort(int[] array)
+        private static TimeSpan InsertSort(int[] array)
         {
+            stopwatch.Start();
             ArrayList sortedArrayList = new ArrayList();
             sortedArrayList.Add(array[0]);
 
@@ -92,7 +97,7 @@ namespace Arrays
                     {
                         sortedArrayList.Insert(sortedArrayList.IndexOf(j), currentElement);
                         inserted = true;
-                        return;
+                        break;
                     }
                 }
 
@@ -106,6 +111,8 @@ namespace Arrays
             {
                 array[i] = (int) sortedArrayList[i];
             }
+            stopwatch.Stop();
+            return stopwatch.Elapsed;
         }
     }
 }
