@@ -22,18 +22,21 @@ namespace Arrays
                 Console.WriteLine("Podaj maksymalną wartość podaną w komórkach tablicy:");
                 int maxValue = int.Parse(Console.ReadLine());
                 int[] array = GenerateIntsArray(arraySize, maxValue);
+                int[] array2 = (int[]) array.Clone();
+                int[] array3 = (int[]) array.Clone();
+                int[] array4 = (int[]) array.Clone();
 
                 Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
                 PrintArray(array);
 
-                //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + BubbleSort(array) + "):");
-                //PrintArray(array);
+                Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + BubbleSort(array2) + "):");
+                PrintArray(array2);
 
-                //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wstawianie (sortowanie zajęło " + InsertSort(array) + "):");
-                //PrintArray(array);
+                Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wstawianie (sortowanie zajęło " + InsertSort(array3) + "):");
+                PrintArray(array3);
 
-                Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wybieranie (sortowanie zajęło " + SelectionSort(array) + "):");
-                PrintArray(array);
+                Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wybieranie (sortowanie zajęło " + SelectionSort(array4) + "):");
+                PrintArray(array4);
             }
             catch (Exception e)
             {
@@ -127,14 +130,12 @@ namespace Arrays
                 int[] minimumValueAndIndex = FindMinimumInRange(array, i + 1);
                 int minimum = minimumValueAndIndex[0];
                 int minimumIndex = minimumValueAndIndex[1];
-                Console.WriteLine("i=" + i + ", a[i]=" + array[i] + ", min=" + minimum + ", minInd=" + minimumIndex);
 
                 if (minimum < array[i])
                 {
                     int auxiliaryVariable = array[i];
                     array[i] = minimum;
                     array[minimumIndex] = auxiliaryVariable;
-                    Console.WriteLine("zamieniono" + auxiliaryVariable + " na " + minimum);
                 }
             }
             stopwatch.Stop();
