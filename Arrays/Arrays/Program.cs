@@ -29,11 +29,11 @@ namespace Arrays
                 //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + BubbleSort(array) + "):");
                 //PrintArray(array);
 
-                Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wstawianie (sortowanie zajęło " + InsertSort(array) + "):");
-                PrintArray(array);
-
-                //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wybieranie (sortowanie zajęło " + SelectionSort(array) + "):");
+                //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wstawianie (sortowanie zajęło " + InsertSort(array) + "):");
                 //PrintArray(array);
+
+                Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wybieranie (sortowanie zajęło " + SelectionSort(array) + "):");
+                PrintArray(array);
             }
             catch (Exception e)
             {
@@ -127,12 +127,14 @@ namespace Arrays
                 int[] minimumValueAndIndex = FindMinimumInRange(array, i + 1);
                 int minimum = minimumValueAndIndex[0];
                 int minimumIndex = minimumValueAndIndex[1];
+                Console.WriteLine("i=" + i + ", a[i]=" + array[i] + ", min=" + minimum + ", minInd=" + minimumIndex);
 
-                if (minimum < i)
+                if (minimum < array[i])
                 {
                     int auxiliaryVariable = array[i];
                     array[i] = minimum;
                     array[minimumIndex] = auxiliaryVariable;
+                    Console.WriteLine("zamieniono" + auxiliaryVariable + " na " + minimum);
                 }
             }
             stopwatch.Stop();
