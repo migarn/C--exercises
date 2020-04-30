@@ -26,11 +26,14 @@ namespace Arrays
                 Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
                 PrintArray(array);
 
-                Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + BubbleSort(array) + "):");
-                PrintArray(array);
+                //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + BubbleSort(array) + "):");
+                //PrintArray(array);
 
                 Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wstawianie (sortowanie zajęło " + InsertSort(array) + "):");
                 PrintArray(array);
+
+                //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wybieranie (sortowanie zajęło " + SelectionSort(array) + "):");
+                //PrintArray(array);
             }
             catch (Exception e)
             {
@@ -121,23 +124,19 @@ namespace Arrays
 
             for (int i = 0; i < array.Length - 1; i++)
             {
-                int minimum = FindMinimumInRange(array, i + 1);
+                int[] minimumValueAndIndex = FindMinimumInRange(array, i + 1);
+                int minimum = minimumValueAndIndex[0];
+                int minimumIndex = minimumValueAndIndex[1];
+
                 if (minimum < i)
                 {
                     int auxiliaryVariable = array[i];
-                    array[i] = array[i + 1];
-                    array[i + 1] = auxiliaryVariable;
-
+                    array[i] = minimum;
+                    array[minimumIndex] = auxiliaryVariable;
                 }
-
             }
-
-
-
-
             stopwatch.Stop();
             return stopwatch.Elapsed;
-
         }
 
         private static int[] FindMinimumInRange(int[] array, int firstIndex)
