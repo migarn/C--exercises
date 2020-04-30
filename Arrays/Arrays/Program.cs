@@ -114,5 +114,37 @@ namespace Arrays
             stopwatch.Stop();
             return stopwatch.Elapsed;
         }
+
+        private static TimeSpan SelectionSort(int[] array)
+        {
+            stopwatch.Start();
+
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+
+            }
+
+
+
+
+            stopwatch.Stop();
+            return stopwatch.Elapsed;
+
+        }
+
+        private static int FindMinimum(int[] array)
+        {
+            int minumum = array[0];
+
+            foreach(int i in array)
+            {
+                if (i < minumum)
+                {
+                    minumum = i;
+                }
+            }
+
+            return minumum;
+        }
     }
 }
