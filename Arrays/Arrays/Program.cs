@@ -6,14 +6,30 @@ namespace Arrays
 {
     class Program
     {
-        static Stopwatch stopwatch = new Stopwatch();
+        
 
         static void Main(string[] args)
         {
-            GenerateArray();
+            int[] array = GenerateArray();
+
+            int[] array2 = (int[])array.Clone();
+            int[] array3 = (int[])array.Clone();
+            int[] array4 = (int[])array.Clone();
+
+            Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
+            //PrintArray(array);
+
+            Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + MeasureTime(() => BubbleSort(array2)) + "):");
+            //PrintArray(array2);
+
+            Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wstawianie (sortowanie zajęło " + MeasureTime(() => InsertSort(array3)) + "):");
+            //PrintArray(array3);
+
+            Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wybieranie (sortowanie zajęło " + MeasureTime(() => SelectionSort(array4)) + "):");
+            //PrintArray(array4);
         }
 
-        private static void GenerateArray()
+        private static int[] GenerateArray()
         {
             try
             {
@@ -21,26 +37,12 @@ namespace Arrays
                 int arraySize = int.Parse(Console.ReadLine());
                 Console.WriteLine("Podaj maksymalną wartość podaną w komórkach tablicy:");
                 int maxValue = int.Parse(Console.ReadLine());
-                int[] array = GenerateIntsArray(arraySize, maxValue);
-                int[] array2 = (int[]) array.Clone();
-                int[] array3 = (int[]) array.Clone();
-                int[] array4 = (int[]) array.Clone();
-
-                Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
-                PrintArray(array);
-
-                Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + BubbleSort(array2) + "):");
-                PrintArray(array2);
-
-                Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wstawianie (sortowanie zajęło " + InsertSort(array3) + "):");
-                PrintArray(array3);
-
-                Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wybieranie (sortowanie zajęło " + SelectionSort(array4) + "):");
-                PrintArray(array4);
+                return GenerateIntsArray(arraySize, maxValue);
             }
             catch (Exception e)
             {
                 Console.WriteLine("Coś poszło nie tak...");
+                return null;
             }
         }
 
@@ -64,9 +66,8 @@ namespace Arrays
             Console.WriteLine();
         }
 
-        private static TimeSpan BubbleSort(int[] array)
+        private static void BubbleSort(int[] array)
         {
-            stopwatch.Start();
             Boolean isSorting = true;
             while (isSorting)
             {
@@ -82,13 +83,10 @@ namespace Arrays
                     }
                 }
             }
-            stopwatch.Stop();
-            return stopwatch.Elapsed;
         }
 
-        private static TimeSpan InsertSort(int[] array)
+        private static void InsertSort(int[] array)
         {
-            stopwatch.Start();
             ArrayList sortedArrayList = new ArrayList();
             sortedArrayList.Add(array[0]);
 
@@ -117,14 +115,10 @@ namespace Arrays
             {
                 array[i] = (int)sortedArrayList[i];
             }
-            stopwatch.Stop();
-            return stopwatch.Elapsed;
         }
 
-        private static TimeSpan SelectionSort(int[] array)
+        private static void SelectionSort(int[] array)
         {
-            stopwatch.Start();
-
             for (int i = 0; i < array.Length - 1; i++)
             {
                 int[] minimumValueAndIndex = FindMinimumInRange(array, i + 1);
@@ -138,8 +132,6 @@ namespace Arrays
                     array[minimumIndex] = auxiliaryVariable;
                 }
             }
-            stopwatch.Stop();
-            return stopwatch.Elapsed;
         }
 
         private static int[] FindMinimumInRange(int[] array, int firstIndex)
@@ -161,6 +153,19 @@ namespace Arrays
             result[1] = minimumIndex;
 
             return result;
+        }
+
+        private static void QuickSort(int[] array)
+        {
+
+        }
+
+        private static TimeSpan MeasureTime(Action action)
+        {
+            Stopwatch stopwatch = Stopwatch.StartNew();
+            action();
+            stopwatch.Stop();
+            return stopwatch.Elapsed;
         }
     }
 }
