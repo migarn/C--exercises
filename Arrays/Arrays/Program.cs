@@ -157,6 +157,11 @@ namespace Arrays
 
         private static void QuickSort(int[] array)
         {
+            QuickSortRecursion(array, 0, array.Length - 1);
+        }
+
+        private static void QuickSortRecursion(int[] array, int begin, int end)
+        { 
 
         }
 
