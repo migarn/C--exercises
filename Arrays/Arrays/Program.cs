@@ -13,18 +13,18 @@ namespace Arrays
 
         private static void launch()
         {
-            int[] array = GenerateArray();
-            Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
-            PrintArray(array);
-            Console.WriteLine("\nWybierz:" +
-                "\n1 - sortowanie bąbelkowe" +
-                "\n2 - sortowanie przez wstawianie" +
-                "\n3 - sortowanie przez wybieranie" +
-                "4 - quick sort" +
-                "5 - wszystkie powyższe + pomiar czasu sortowania");
-
             try
             {
+                int[] array = GenerateArray();
+                Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
+                PrintArray(array);
+                Console.WriteLine("\nWybierz:" +
+                    "\n1 - sortowanie bąbelkowe" +
+                    "\n2 - sortowanie przez wstawianie" +
+                    "\n3 - sortowanie przez wybieranie" +
+                    "\n4 - quick sort" +
+                    "\n5 - wszystkie powyższe + pomiar czasu sortowania");
+
                 int choice = int.Parse(Console.ReadLine());
 
                 if (choice > 5 || choice < 1)
@@ -87,7 +87,7 @@ namespace Arrays
                         try
                         {
                             int number = int.Parse(Console.ReadLine());
-                            Boolean inArray = BinarySearch(clonedArray, 9);
+                            Boolean inArray = BinarySearch(clonedArray, number);
 
                             if (inArray)
                             {
@@ -100,13 +100,13 @@ namespace Arrays
                         }
                         catch (Exception e)
                         {
-                            Console.WriteLine("Coś poszło nie tak...");
+                            throw new Exception("Wrong value.");
                         }
                     }
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Coś poszło nie tak...");
+                    throw new Exception("Wrong value.");
                 }
             }
             catch (Exception e)
@@ -121,14 +121,13 @@ namespace Arrays
             {
                 Console.WriteLine("Podaj rozmiar tablicy:");
                 int arraySize = int.Parse(Console.ReadLine());
-                Console.WriteLine("Podaj maksymalną wartość podaną w komórkach tablicy:");
+                Console.WriteLine("\nPodaj maksymalną wartość podaną w komórkach tablicy:");
                 int maxValue = int.Parse(Console.ReadLine());
                 return GenerateIntsArray(arraySize, maxValue);
             }
             catch (Exception e)
             {
-                Console.WriteLine("Coś poszło nie tak...");
-                return null;
+                throw new Exception("Wrong value.");
             }
         }
 
