@@ -16,7 +16,7 @@ namespace Arrays
             //int[] array5 = (int[])array.Clone();
 
             int[] arrayx = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 18, 20, 25, 27};
-            Console.WriteLine(BinarySearch(arrayx, 0));
+            Console.WriteLine(BinarySearch(arrayx, 9));
 
             //Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
             //PrintArray(array);
@@ -212,26 +212,33 @@ namespace Arrays
 
         private static Boolean BinarySearchRecursion(int[] array, int numberToFind, int begin, int end)
         {
-            int number = array[(end - begin) / 2];
+            if (begin == end)
+            {
+                if (array[begin] == numberToFind)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            int number = array[(end + begin) / 2];        
 
             if (numberToFind > number)
             {
-                return BinarySearchRecursion(array, numberToFind, (end - begin) / 2 + 1, end);
+                return BinarySearchRecursion(array, numberToFind, (end + begin) / 2 + 1, end);
             }
 
             else if (numberToFind < number)
             {
-                return BinarySearchRecursion(array, numberToFind, begin, (end - begin) / 2 - 1);
-            }
-
-            else if (numberToFind == number)
-            {
-                return true;
+                return BinarySearchRecursion(array, numberToFind, begin, (end + begin) / 2 - 1);
             }
 
             else
             {
-                return false;
+                return true;
             }
         }
     }
