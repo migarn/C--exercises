@@ -6,19 +6,20 @@ namespace Arrays
 {
     class Program
     {
-        
-
         static void Main(string[] args)
         {
-            int[] array = GenerateArray();
+            //int[] array = GenerateArray();
 
-            int[] array2 = (int[])array.Clone();
-            int[] array3 = (int[])array.Clone();
-            int[] array4 = (int[])array.Clone();
-            int[] array5 = (int[])array.Clone();
+            //int[] array2 = (int[])array.Clone();
+            //int[] array3 = (int[])array.Clone();
+            //int[] array4 = (int[])array.Clone();
+            //int[] array5 = (int[])array.Clone();
 
-            Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
-            PrintArray(array);
+            int[] arrayx = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 18, 20, 25, 27};
+            Console.WriteLine(BinarySearch(arrayx, 0));
+
+            //Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
+            //PrintArray(array);
 
             //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + MeasureTime(() => BubbleSort(array2)) + "):");
             //PrintArray(array2);
@@ -29,8 +30,8 @@ namespace Arrays
             //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wybieranie (sortowanie zajęło " + MeasureTime(() => SelectionSort(array4)) + "):");
             //PrintArray(array4);
 
-            Console.WriteLine("\nTablica z wartościami posortowanymi metodą Quick Sort (sortowanie zajęło " + MeasureTime(() => QuickSort(array5)) + "):");
-            PrintArray(array5);
+            //Console.WriteLine("\nTablica z wartościami posortowanymi metodą Quick Sort (sortowanie zajęło " + MeasureTime(() => QuickSort(array5)) + "):");
+            //PrintArray(array5);
         }
 
         private static int[] GenerateArray()
@@ -202,6 +203,36 @@ namespace Arrays
             action();
             stopwatch.Stop();
             return stopwatch.Elapsed;
+        }
+
+        private static Boolean BinarySearch(int[] array, int numberToFind)
+        {
+            return BinarySearchRecursion(array, numberToFind, 0, array.Length - 1);
+        }
+
+        private static Boolean BinarySearchRecursion(int[] array, int numberToFind, int begin, int end)
+        {
+            int number = array[(end - begin) / 2];
+
+            if (numberToFind > number)
+            {
+                return BinarySearchRecursion(array, numberToFind, (end - begin) / 2 + 1, end);
+            }
+
+            else if (numberToFind < number)
+            {
+                return BinarySearchRecursion(array, numberToFind, begin, (end - begin) / 2 - 1);
+            }
+
+            else if (numberToFind == number)
+            {
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
         }
     }
 }
