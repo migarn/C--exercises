@@ -171,7 +171,7 @@ namespace Arrays
             array[i] = array[end];
             int j = begin;
 
-            for (i = begin; i < end - 1; i++)
+            for (i = begin; i < end; i++)
             {
                 if (array[i] < pivot)
                 {
