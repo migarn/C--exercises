@@ -8,30 +8,111 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
-            //int[] array = GenerateArray();
+            launch();
+        }
 
-            //int[] array2 = (int[])array.Clone();
-            //int[] array3 = (int[])array.Clone();
-            //int[] array4 = (int[])array.Clone();
-            //int[] array5 = (int[])array.Clone();
+        private static void launch()
+        {
+            int[] array = GenerateArray();
+            Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
+            PrintArray(array);
+            Console.WriteLine("\nWybierz:" +
+                "\n1 - sortowanie bąbelkowe" +
+                "\n2 - sortowanie przez wstawianie" +
+                "\n3 - sortowanie przez wybieranie" +
+                "4 - quick sort" +
+                "5 - wszystkie powyższe + pomiar czasu sortowania");
 
-            int[] arrayx = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 15, 18, 20, 25, 27};
-            Console.WriteLine(BinarySearch(arrayx, 9));
+            try
+            {
+                int choice = int.Parse(Console.ReadLine());
 
-            //Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
-            //PrintArray(array);
+                if (choice > 5 || choice < 1)
+                {
+                    throw new Exception("Wrong value.");
+                }
 
-            //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + MeasureTime(() => BubbleSort(array2)) + "):");
-            //PrintArray(array2);
+                int[] clonedArray = (int[])array.Clone();
 
-            //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wstawianie (sortowanie zajęło " + MeasureTime(() => InsertSort(array3)) + "):");
-            //PrintArray(array3);
+                switch (choice)
+                {
+                    case 1:
+                        Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + MeasureTime(() => BubbleSort(clonedArray)) + "):");
+                        PrintArray(clonedArray);
+                        break;
+                    case 2:
+                        Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wstawianie (sortowanie zajęło " + MeasureTime(() => InsertSort(clonedArray)) + "):");
+                        PrintArray(clonedArray);
+                        break;
+                    case 3:
+                        Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wybieranie (sortowanie zajęło " + MeasureTime(() => SelectionSort(clonedArray)) + "):");
+                        PrintArray(clonedArray);
+                        break;
+                    case 4:
+                        Console.WriteLine("\nTablica z wartościami posortowanymi metodą Quick Sort (sortowanie zajęło " + MeasureTime(() => QuickSort(clonedArray)) + "):");
+                        PrintArray(clonedArray);
+                        break;
+                    case 5:
+                        int[] clonedArray2 = (int[])array.Clone();
+                        int[] clonedArray3 = (int[])array.Clone();
+                        int[] clonedArray4 = (int[])array.Clone();
+                        Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + MeasureTime(() => BubbleSort(clonedArray)) + "):");
+                        PrintArray(clonedArray);
+                        Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wstawianie (sortowanie zajęło " + MeasureTime(() => InsertSort(clonedArray2)) + "):");
+                        PrintArray(clonedArray2);
+                        Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wybieranie (sortowanie zajęło " + MeasureTime(() => SelectionSort(clonedArray3)) + "):");
+                        PrintArray(clonedArray3);
+                        Console.WriteLine("\nTablica z wartościami posortowanymi metodą Quick Sort (sortowanie zajęło " + MeasureTime(() => QuickSort(clonedArray4)) + "):");
+                        PrintArray(clonedArray4);
+                        break;
+                }
 
-            //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wybieranie (sortowanie zajęło " + MeasureTime(() => SelectionSort(array4)) + "):");
-            //PrintArray(array4);
+                Console.WriteLine("\nWybierz:" +
+                    "\n1 - aby wyszukać zadaną liczbę w tablicy" +
+                    "\n2 - aby zakończyć");
 
-            //Console.WriteLine("\nTablica z wartościami posortowanymi metodą Quick Sort (sortowanie zajęło " + MeasureTime(() => QuickSort(array5)) + "):");
-            //PrintArray(array5);
+                try
+                {
+                    choice = int.Parse(Console.ReadLine());
+
+                    if (choice > 2 || choice < 1)
+                    {
+                        throw new Exception("Wrong value.");
+                    }
+
+                    if (choice == 1)
+                    {
+                        Console.WriteLine("\nWpisz liczbę do wyszukania:");
+
+                        try
+                        {
+                            int number = int.Parse(Console.ReadLine());
+                            Boolean inArray = BinarySearch(clonedArray, 9);
+
+                            if (inArray)
+                            {
+                                Console.WriteLine("\nLiczba znajduje się w tablicy");
+                            }
+                            else
+                            {
+                                Console.WriteLine("\nLiczba nie znajduje się w tablicy");
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Coś poszło nie tak...");
+                        }
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Coś poszło nie tak...");
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Coś poszło nie tak...");
+            }
         }
 
         private static int[] GenerateArray()
