@@ -15,18 +15,22 @@ namespace Arrays
             int[] array2 = (int[])array.Clone();
             int[] array3 = (int[])array.Clone();
             int[] array4 = (int[])array.Clone();
+            int[] array5 = (int[])array.Clone();
 
             Console.WriteLine("\nTablica z nieposortowanymi wartościami:");
-            //PrintArray(array);
+            PrintArray(array);
 
-            Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + MeasureTime(() => BubbleSort(array2)) + "):");
+            //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania bąbelkowego (sortowanie zajęło " + MeasureTime(() => BubbleSort(array2)) + "):");
             //PrintArray(array2);
 
-            Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wstawianie (sortowanie zajęło " + MeasureTime(() => InsertSort(array3)) + "):");
+            //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wstawianie (sortowanie zajęło " + MeasureTime(() => InsertSort(array3)) + "):");
             //PrintArray(array3);
 
-            Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wybieranie (sortowanie zajęło " + MeasureTime(() => SelectionSort(array4)) + "):");
+            //Console.WriteLine("\nTablica z wartościami posortowanymi metodą sortowania przez wybieranie (sortowanie zajęło " + MeasureTime(() => SelectionSort(array4)) + "):");
             //PrintArray(array4);
+
+            Console.WriteLine("\nTablica z wartościami posortowanymi metodą Quick Sort (sortowanie zajęło " + MeasureTime(() => QuickSort(array5)) + "):");
+            PrintArray(array5);
         }
 
         private static int[] GenerateArray()
@@ -161,8 +165,35 @@ namespace Arrays
         }
 
         private static void QuickSortRecursion(int[] array, int begin, int end)
-        { 
+        {
+            int i = (begin + end) / 2;
+            int pivot = array[i];
+            array[i] = array[end];
+            int j = begin;
 
+            for (i = begin; i < end - 1; i++)
+            {
+                if (array[i] < pivot)
+                {
+                    int auxiliaryVariable = array[i];
+                    array[i] = array[j];
+                    array[j] = auxiliaryVariable;
+                    j++;
+                }
+            }
+
+            array[end] = array[j];
+            array[j] = pivot;
+
+            if (begin < j - 1)
+            {
+                QuickSortRecursion(array, begin, j - 1);
+            }
+
+            if (end > j + 1)
+            {
+                QuickSortRecursion(array, j + 1, end);
+            }
         }
 
         private static TimeSpan MeasureTime(Action action)
