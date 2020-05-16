@@ -8,9 +8,9 @@ namespace MichalGarnczarskiMVCHelloWorld.Controllers
 {
     public class GetController : Controller
     {
-        public string Index()
+        public string Index(string name)
         {
-            return "Tu  metoda  Index GetControllera";
+            return "Hallo " + name + ", tu  metoda  Index GetControllera";
         }
     }
 }
