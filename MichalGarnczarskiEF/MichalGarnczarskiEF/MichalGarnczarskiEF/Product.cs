@@ -7,5 +7,7 @@ namespace MichalGarnczarskiEF
     class Product
     {
         public int ProductID { get; set; }
+        public string Name { get; set; }
+        public int UnitsInStock { get; set; }
     }
 }
