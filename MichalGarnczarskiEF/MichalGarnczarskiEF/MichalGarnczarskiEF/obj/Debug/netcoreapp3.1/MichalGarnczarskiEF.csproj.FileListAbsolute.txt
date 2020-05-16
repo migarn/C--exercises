@@ -52,3 +52,4 @@ E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\bin\Debug\
 E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 e:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\bin\Debug\netcoreapp3.1\Product.db

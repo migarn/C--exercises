@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IMRnVrHoue+S1MgZapmpEp+gdIO1aG5t9FF5nkF5XD5LX+HLhLJ3c8xEKrBDGSGlR91WS+jNr32jkcCWlHOdCA==",
+  "dgSpecHash": "+JwLBRu4sdMqDGkXdaCAqVcViC+hH8HKLfRruHjmEToS3IxyQDdNATDsQT8cg+5ZoCItllcV6VLzVlUR48AFNw==",
   "success": true,
-  "projectFilePath": "e:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj",
+  "projectFilePath": "E:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nazwa\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\nazwa\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

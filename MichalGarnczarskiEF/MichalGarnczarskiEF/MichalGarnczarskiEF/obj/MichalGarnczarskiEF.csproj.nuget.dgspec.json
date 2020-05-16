@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj": {}
+    "E:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj": {}
   },
   "projects": {
-    "e:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj": {
+    "E:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj",
+        "projectUniqueName": "E:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj",
         "projectName": "MichalGarnczarskiEF",
-        "projectPath": "e:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj",
+        "projectPath": "E:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj",
         "packagesPath": "C:\\Users\\nazwa\\.nuget\\packages\\",
-        "outputPath": "e:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\obj\\",
+        "outputPath": "E:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nazwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
