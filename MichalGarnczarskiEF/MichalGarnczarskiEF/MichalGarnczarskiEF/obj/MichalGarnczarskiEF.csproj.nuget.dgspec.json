@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj": {}
+    "e:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj": {}
   },
   "projects": {
-    "E:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj": {
+    "e:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj",
+        "projectUniqueName": "e:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj",
         "projectName": "MichalGarnczarskiEF",
-        "projectPath": "E:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj",
+        "projectPath": "e:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF.csproj",
         "packagesPath": "C:\\Users\\nazwa\\.nuget\\packages\\",
-        "outputPath": "E:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\obj\\",
+        "outputPath": "e:\\CSharp\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\MichalGarnczarskiEF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nazwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,16 @@
         "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[3.1.4, )"
             }
