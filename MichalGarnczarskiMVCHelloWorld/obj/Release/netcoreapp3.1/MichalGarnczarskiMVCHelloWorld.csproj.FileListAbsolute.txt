@@ -108,3 +108,4 @@ E:\CSharp\MichalGarnczarskiMVCHelloWorld\bin\Release\netcoreapp3.1\zh-Hant\Micro
 E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\MichalGarnczarskiMVCHelloWorld.csprojAssemblyReference.cache
 E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\MichalGarnczarskiMVCHelloWorld.csproj.CoreCompileInputs.cache
 E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\MichalGarnczarskiMVCHelloWorld.MvcApplicationPartsAssemblyInfo.cache
+E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\Razor\Views\Home\Hello.cshtml.g.cs
