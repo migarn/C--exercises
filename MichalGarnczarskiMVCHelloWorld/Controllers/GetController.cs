@@ -10,7 +10,7 @@ namespace MichalGarnczarskiMVCHelloWorld.Controllers
     {
         public string Index(string name)
         {
-            return "Hallo " + name + ", tu  metoda  Index GetControllera";
+            return System.Web.HttpUtility.HtmlEncode("Hallo " + name + ", tu  metoda  Index GetControllera");
         }
     }
 }
