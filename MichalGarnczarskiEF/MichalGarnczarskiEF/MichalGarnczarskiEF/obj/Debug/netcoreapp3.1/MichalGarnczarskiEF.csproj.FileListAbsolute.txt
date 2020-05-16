@@ -1,0 +1,13 @@
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\bin\Debug\netcoreapp3.1\MichalGarnczarskiEF.exe
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\bin\Debug\netcoreapp3.1\MichalGarnczarskiEF.deps.json
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\bin\Debug\netcoreapp3.1\MichalGarnczarskiEF.runtimeconfig.json
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\bin\Debug\netcoreapp3.1\MichalGarnczarskiEF.runtimeconfig.dev.json
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\bin\Debug\netcoreapp3.1\MichalGarnczarskiEF.dll
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\bin\Debug\netcoreapp3.1\MichalGarnczarskiEF.pdb
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\obj\Debug\netcoreapp3.1\MichalGarnczarskiEF.csprojAssemblyReference.cache
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\obj\Debug\netcoreapp3.1\MichalGarnczarskiEF.csproj.CoreCompileInputs.cache
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\obj\Debug\netcoreapp3.1\MichalGarnczarskiEF.AssemblyInfoInputs.cache
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\obj\Debug\netcoreapp3.1\MichalGarnczarskiEF.AssemblyInfo.cs
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\obj\Debug\netcoreapp3.1\MichalGarnczarskiEF.dll
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\obj\Debug\netcoreapp3.1\MichalGarnczarskiEF.pdb
+E:\CSharp\MichalGarnczarskiEF\MichalGarnczarskiEF\MichalGarnczarskiEF\obj\Debug\netcoreapp3.1\MichalGarnczarskiEF.genruntimeconfig.cache
