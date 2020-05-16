@@ -10,7 +10,8 @@ namespace MichalGarnczarskiEF
             string productName = Console.ReadLine();
             Product product = new Product { Name = productName };
             ProdContext prodContext = new ProdContext();
-            prodContext.Add(product);
+            prodContext.Products.Add(product);
+            prodContext.SaveChanges();
         }
     }
 }
