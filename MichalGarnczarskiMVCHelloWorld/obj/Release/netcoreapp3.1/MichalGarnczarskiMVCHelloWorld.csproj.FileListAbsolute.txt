@@ -109,3 +109,4 @@ E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\MichalGarncza
 E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\MichalGarnczarskiMVCHelloWorld.csproj.CoreCompileInputs.cache
 E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\MichalGarnczarskiMVCHelloWorld.MvcApplicationPartsAssemblyInfo.cache
 E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\Razor\Views\Home\Hello.cshtml.g.cs
+E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\Razor\Views\Get\Index.cshtml.g.cs
