@@ -162,3 +162,8 @@ E:\CSharp\MichalGarnczarskiMVCHelloWorld\bin\Release\netcoreapp3.1\runtimes\win\
 E:\CSharp\MichalGarnczarskiMVCHelloWorld\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\MichalGarnczarskiMVCHelloWorld.csproj.CoreCompileInputs.cache
 E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\MichalGarnczarskiMVCHelloWorld.MvcApplicationPartsAssemblyInfo.cache
+E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\Razor\Views\Animals\Create.cshtml.g.cs
+E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\Razor\Views\Animals\Delete.cshtml.g.cs
+E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\Razor\Views\Animals\Details.cshtml.g.cs
+E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\Razor\Views\Animals\Edit.cshtml.g.cs
+E:\CSharp\MichalGarnczarskiMVCHelloWorld\obj\Release\netcoreapp3.1\Razor\Views\Animals\Index.cshtml.g.cs
