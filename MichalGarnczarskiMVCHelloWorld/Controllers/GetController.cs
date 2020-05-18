@@ -10,6 +10,7 @@ namespace MichalGarnczarskiMVCHelloWorld.Controllers
     {
         public IActionResult Index(string name)
         {
+            ViewData["name"] = name;
             return View();
             //return System.Web.HttpUtility.HtmlEncode("Hallo " + name + ", tu  metoda  Index GetControllera");
         }
