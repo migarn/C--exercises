@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CSharp\\MichalGarnczarskiMVCHelloWorld\\MichalGarnczarskiMVCHelloWorld.csproj": {}
+    "e:\\CSharp\\MichalGarnczarskiMVCHelloWorld\\MichalGarnczarskiMVCHelloWorld.csproj": {}
   },
   "projects": {
-    "E:\\CSharp\\MichalGarnczarskiMVCHelloWorld\\MichalGarnczarskiMVCHelloWorld.csproj": {
+    "e:\\CSharp\\MichalGarnczarskiMVCHelloWorld\\MichalGarnczarskiMVCHelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CSharp\\MichalGarnczarskiMVCHelloWorld\\MichalGarnczarskiMVCHelloWorld.csproj",
+        "projectUniqueName": "e:\\CSharp\\MichalGarnczarskiMVCHelloWorld\\MichalGarnczarskiMVCHelloWorld.csproj",
         "projectName": "MichalGarnczarskiMVCHelloWorld",
-        "projectPath": "E:\\CSharp\\MichalGarnczarskiMVCHelloWorld\\MichalGarnczarskiMVCHelloWorld.csproj",
+        "projectPath": "e:\\CSharp\\MichalGarnczarskiMVCHelloWorld\\MichalGarnczarskiMVCHelloWorld.csproj",
         "packagesPath": "C:\\Users\\nazwa\\.nuget\\packages\\",
-        "outputPath": "E:\\CSharp\\MichalGarnczarskiMVCHelloWorld\\obj\\",
+        "outputPath": "e:\\CSharp\\MichalGarnczarskiMVCHelloWorld\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nazwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
