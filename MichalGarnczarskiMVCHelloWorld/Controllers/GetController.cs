@@ -12,7 +12,6 @@ namespace MichalGarnczarskiMVCHelloWorld.Controllers
         {
             ViewData["name"] = name;
             return View();
-            //return System.Web.HttpUtility.HtmlEncode("Hallo " + name + ", tu  metoda  Index GetControllera");
         }
     }
 }
