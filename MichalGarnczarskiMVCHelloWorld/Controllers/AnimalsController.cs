@@ -32,6 +32,13 @@ namespace MichalGarnczarskiMVCHelloWorld.Controllers
             return View(await animals.ToListAsync());
         }
 
+        // POST: Animals
+        [HttpPost]
+        public string Index(string id, bool? http)
+        {
+            return id;
+        }
+
         // GET: Animals/Details/5
         public async Task<IActionResult> Details(int? id)
         {
