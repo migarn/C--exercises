@@ -34,9 +34,17 @@ namespace MichalGarnczarskiMVCHelloWorld.Controllers
 
         // POST: Animals
         [HttpPost]
-        public string Index(string id, bool? http)
+        public async Task<IActionResult> Index(string id, bool? http)
         {
-            return id;
+
+            var animals = from a in _context.Animal
+                          select a;
+
+            if (!String.IsNullOrEmpty(id))
+            {
+                animals = animals.Where(a => a.Name.Contains(id));
+            }
+            return View(await animals.ToListAsync());
         }
 
         // GET: Animals/Details/5
